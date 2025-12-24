@@ -11,7 +11,9 @@ const app = express();
 dotenv.config();
 const port = process.env.PORT || 4000;
 
-const allowedOrigins = ["http://localhost:5173",];
+const allowedOrigins = ["http://localhost:5173",
+    "https://taskflow-theta-eight.vercel.app",
+];
 
 app.use(cors({
     origin : function (origin, callback) {
